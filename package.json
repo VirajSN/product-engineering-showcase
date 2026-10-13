@@ -1,0 +1,13 @@
+{
+  "name": "job-hunt-workflow-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Selected workflow logic from an AI-assisted Job Hunt Android project",
+  "scripts": {
+    "test": "node -r ./scripts/register-typescript.cjs --test src/loop.test.cjs src/domain/*.test.cjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "engines": { "node": ">=22.18.0" },
+  "devDependencies": { "typescript": "6.0.3" }
+}
